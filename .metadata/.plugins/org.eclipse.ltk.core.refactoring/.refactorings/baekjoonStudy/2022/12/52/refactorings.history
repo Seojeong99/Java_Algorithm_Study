@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;algoPractice.Main_로프&apos; to &apos;Main_2217_로프&apos;&#x0D;&#x0A;- Original project: &apos;algoPractice&apos;&#x0D;&#x0A;- Original element: &apos;algoPractice.Main_로프&apos;&#x0D;&#x0A;- Renamed element: &apos;algoPractice.Main_2217_로프&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Main_로프&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;algoPractice{Main_로프.java[Main_로프" matchStrategy="1" name="Main_2217_로프" qualified="false" references="true" similarDeclarations="false" stamp="1671711453910" textual="false" version="1.0"/>
+</session>
