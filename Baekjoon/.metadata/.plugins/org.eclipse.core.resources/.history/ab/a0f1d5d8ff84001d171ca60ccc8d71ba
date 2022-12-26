@@ -1,0 +1,11 @@
+package algo;
+
+public class Main_10815_숫자카드 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] test=new int[500000];
+		test[499999]=1;
+	}
+
+}

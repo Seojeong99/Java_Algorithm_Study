@@ -1,0 +1,15 @@
+package algo;
+
+import java.io.BufferedReader;
+
+import jdk.internal.jline.internal.InputStreamReader;
+
+public class Main_10815_숫자카드 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+		
+	}
+
+}
