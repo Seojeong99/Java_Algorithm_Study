@@ -36,13 +36,14 @@ public class Main_10816_숫자카드2 {
 			else {
 				map.put(n,1);
 			}
-			set.add(n);
+//			set.add(n);
+			check[i]=n;
 		}
 		
-		int count=0;
-		for(int i:set) {
-			check[count++]=i;
-		}
+//		int count=0;
+//		for(int i:set) {
+//			check[count++]=i;
+//		}
 		
 		st = new StringTokenizer(br.readLine());
 		n2=Integer.parseInt(st.nextToken());

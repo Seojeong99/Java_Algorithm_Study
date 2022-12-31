@@ -16,55 +16,38 @@ public class Main_2003_수들의합2 {
 		
 		int num[]=new int[N];
 		st = new StringTokenizer(br.readLine());
-		int fullnum=0;
+		
 		for(int i=0; i<N; i++) {
 			num[i]=Integer.parseInt(st.nextToken());
-			fullnum=fullnum+num[i];
 		}
 		
-		Arrays.sort(num);
-		int a=0;
-		int b=N-1;
-		int an=0;
-		int count=0;
-		while(true) {
 
-			if(a>=b) {
-				fullnum=fullnum-(num[a]+num[b]);
-				a++;
-				b++;
-				if(a<0 || b>=N-1) {
-					break;
-				}
-				fullnum=fullnum+(num[a]+num[b]);
-			}
-			if(fullnum>M) {
-				fullnum=fullnum-(num[b]);
-				b--;
-				if(a<0 || b>N-1) {
-					break;
-				}
-			}
-			else if(fullnum<M) {
-				fullnum=fullnum-(num[a]);
-				a++;
-				if(a<0 || b>N-1) {
-					break;
-				}
-			}
-			if(fullnum==M) {
-				fullnum=fullnum-(num[a]+num[b]);
-				a++;
-				b++;
-				count++;
-				if(a<0 || b>N-1) {
-					break;
-				}
-				fullnum=fullnum+(num[a]+num[b]);
-			}
-		}
-			
-			System.out.println(count);
+	
+		int sum=0;
+		int start=0;
+		int end=0;
+		int count=0;
 		
+
+		 
+		while(true) {
+			if(sum>=M){
+                sum-=num[start];
+                start++;
+            }
+            else if(end==N){
+                break;
+            }else{
+                sum+=num[end];
+                end++;
+            }
+
+            if(sum==M){
+                count++;
+            }
+		}
+		
+		System.out.println(count);
+			
 	}
 }
